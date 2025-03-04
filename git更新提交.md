@@ -40,7 +40,7 @@
    git remote add origin https://github.com/your-username/your-repository.git
    ```
 
-   将 `https://github.com/your-username/your-repository.git` 替换为你的 GitHub 仓库地址。
+   将 https://github.com/despeople/readNote.git 替换为你的 GitHub 仓库地址。
 
 ### 5. **推送更改到 GitHub**
    使用以下命令将更改推送到 GitHub：
