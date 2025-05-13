@@ -85,10 +85,12 @@ make
   使用 `scp` 命令将文件传输到开发板。例如：
 
   ```bash
-  scp my_program user@target_device:/home/user/
-  scp /path/to/dependencies/*.so user@target_device:/home/user/libs/
+  # 传输文件
+  scp ssh-test.txt root@172.32.0.93:/root
+  # 传输文件夹
+scp -r ssh-test root@172.32.0.93:/root
   ```
-
+  
 - **使用 USB 或 SD 卡**：将编译结果通过 USB 或 SD 卡复制到开发板。
 
 ### **6. 在开发板上运行**
@@ -125,3 +127,5 @@ export LD_LIBRARY_PATH=/home/user/libs:$LD_LIBRARY_PATH
 ### **总结**
 
 使用 CMake 进行交叉编译的关键是设置正确的工具链文件，并且在 CMake 中正确配置目标平台和依赖的动态库路径。通过这些步骤，你可以在本地开发环境中编译适用于开发板的代码，并顺利移植到目标设备上运行。
+
+![image-20250430185820517](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250430185820517.png)

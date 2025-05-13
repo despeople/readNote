@@ -42,20 +42,16 @@ SET(CMAKE_SYSTEM_NAME Linux)
 SET(CMAKE_SYSTEM_PROCESSOR arm)
 
 # 设置交叉编译工具链路径
-SET(CMAKE_C_COMPILER /path/to/your/toolchain/bin/arm-linux-gnueabihf-gcc)
-SET(CMAKE_CXX_COMPILER /path/to/your/toolchain/bin/arm-linux-gnueabihf-g++)
+SET(CMAKE_C_COMPILER /home/despeople/luckfox-pico/tools/linux/toolchain/arm-rockchip830-linux-uclibcgnueabihf/bin/arm-rockchip830-linux-uclibcgnueabihf-gcc)
+SET(CMAKE_CXX_COMPILER /home/despeople/luckfox-pico/tools/linux/toolchain/arm-rockchip830-linux-uclibcgnueabihf/bin/arm-rockchip830-linux-uclibcgnueabihf-g++)
 
 # 设置目标系统的根文件系统
-SET(CMAKE_FIND_ROOT_PATH /path/to/your/target/sysroot)
+SET(CMAKE_FIND_ROOT_PATH /home/despeople/luckfox-pico/tools/linux/toolchain/arm-rockchip830-linux-uclibcgnueabihf/arm-rockchip830-linux-uclibcgnueabihf/sysroot)
 
 # 告诉 CMake 只使用交叉编译工具链搜索库和头文件
 SET(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
 SET(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
 SET(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
-
-# 如果您使用的目标板不支持某些库（例如 libpng），可以禁用
-# 禁用不必要的库
-SET(WITH_PNG OFF)
 ```
 
 ### 4. **配置 OpenCV**
