@@ -162,8 +162,8 @@ int main() {
    在文件末尾添加以下内容，指向 OpenCV 的头文件路径：
 
    ```bash
-   export CXXFLAGS="-I/usr/local/include/opencv4"
-   export CPPFLAGS="-I/usr/local/include/opencv4"
+   export CXXFLAGS="-I/root/luckfox_V4L2/include/opencv"
+   export CPPFLAGS="-I/root/luckfox_V4L2/include/opencv2"
    ```
 
    这里，`/usr/local/include/opencv4` 是你的 OpenCV 头文件所在目录。
@@ -173,7 +173,7 @@ int main() {
    同样，在 `~/.bashrc` 中，添加以下内容：
 
    ```bash
-   export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
+   exportLD_LIBRARY_PATH="/root/yolov5/PCB_Defect_Detection/libthread/arm-linux-gnueabihf:$LD_LIBRARY_PATH"
    ```
 
    这里，`/usr/local/lib` 是 OpenCV 动态库文件所在的目录。
@@ -186,3 +186,4 @@ int main() {
    source ~/.bashrc
    ```
 
+/root/yolov5/PCB_Defect_Detection/librknn/lib
